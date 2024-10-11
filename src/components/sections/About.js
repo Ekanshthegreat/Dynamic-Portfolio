@@ -101,22 +101,23 @@ const About = () => {
   });
   const technologiesArr = [
     "Java",
-    "Swift",
-    "Node",
-    "AWS",
+    "C++",
+    "Python",
+    "HTML",
     "Material-UI",
-    "MetaMask",
-    "Ethereum",
+    "CSS",
     "Javascript",
-    "PostgresSQL",
-    "Solidity",
+    "mySQL",
     "React",
-    "Kubernetes",
-    "Angular",
     "Git",
-    "Express",
-    "Java",
     "Swift",
+    "Haskell",
+    "Rust",
+    "Flask",
+    "Unity",
+    "Firebase",
+    "Docker",
+    "Maven",
   ];
 
   return (
@@ -139,11 +140,7 @@ const About = () => {
             <StyledDivider />
           </StyledGenericTitle>
           <StyledGenericSubText component="h1">
-            Hey there! My name is Maximilian and I have been building different
-            types of web and mobile applications for 7+ years. After publishing
-            a few games to the iOS App Store, I became more interested in
-            developing responsive web designs with React. Listed below are some
-            of the languages and technologies that I have experience using.
+          Hello! My name is Ekansh Chawla, and I am a third-year Computer Science student with a passion for developing web and mobile applications. Over the past few years, I've created Unity games and worked on various software development projects, which have deepened my interest in building responsive web designs using React. Below are some of the languages and technologies I have experience with.
           </StyledGenericSubText>
           <StyledScrollingContainer>
             <StyledScrollingBelt>
