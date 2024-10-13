@@ -73,7 +73,7 @@ const Footer = () => {
           <StyledFooterList>
             <StyledListItemLink
               sx={{ marginRight: "-0.3rem" }}
-              href="https://www.linkedin.com/in/max-oberholtzer/"
+              href="https://www.linkedin.com/in/ekansh-chawla/"
               target="_blank"
             >
               <svg
@@ -89,7 +89,7 @@ const Footer = () => {
               </svg>
             </StyledListItemLink>
             <StyledListItemLink
-              href="https://github.com/Maximilian-Oberholtzer"
+              href="https://github.com/Ekanshthegreat"
               target="_blank"
             >
               <svg
@@ -105,7 +105,7 @@ const Footer = () => {
               </svg>
             </StyledListItemLink>
             <StyledListItemLink
-              href="mailto:max.oberholtzer@yahoo.com"
+              href="mailto:eca162@sfu.ca"
               sx={{ transform: "scale(0.95)" }}
             >
               <svg
