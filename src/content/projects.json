@@ -5,7 +5,6 @@
     "image": "../images/Wastewise.png",
     "description": "Automated Garbage Sorting using Object Detection and AI",
     "skills": ["React", "RAG", "Neo4j", "OpenAI"],
-    "websiteLink": "https://mellowheadsnft.com",
     "githubLink": "https://github.com/Maximilian-Oberholtzer/mellow-heads-nft"
   },
   {
@@ -14,7 +13,6 @@
     "image": "../images/groccerystore.jpg",
     "description": "System to manage inventory, orders and clients.",
     "skills": ["MySQL", "Flask", "JavaScript", "HTML", "CSS"],
-    "websiteLink": "https://letterswap.io",
     "githubLink": "https://github.com/Maximilian-Oberholtzer/letter-swap"
   },
   {
@@ -23,7 +21,6 @@
     "image": "../images/terminalvoice.png",
     "description": "Software enabling voice control over the terminal",
     "skills": ["Node.js", "Expo", "Vosk API"],
-    "websiteLink": "http://www.feedsanalysistool.com/",
     "githubLink": "https://github.com/Maximilian-Oberholtzer/replay-analysis-tool"
   },
   {
@@ -32,7 +29,6 @@
     "image": "../images/oldwebsite.png",
     "description": "Old static portfolio website ",
     "skills": ["Swift", "SpriteKit", "Xcode", "Game Center"],
-    "websiteLink": "",
     "githubLink": ""
   }
 ]

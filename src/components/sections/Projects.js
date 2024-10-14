@@ -240,14 +240,7 @@ const Projects = () => {
                           </StyledProjectsSkillText>
                         ))}
                       </StyledProjectsSkillContainer>
-                      {project.websiteLink && (
-                        <StyledProjectsOpenLink
-                          href={project.websiteLink}
-                          target="_blank"
-                        >
-                          <LaunchIcon />
-                        </StyledProjectsOpenLink>
-                      )}
+                      
                       {project.githubLink && (
                         <StyledProjectsGHLink
                           href={project.githubLink}
