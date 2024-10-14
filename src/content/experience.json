@@ -1,16 +1,30 @@
 [
   {
     "id": "0",
-    "company": "American Water",
-    "jobTitle": "Software Engineer II",
-    "years": "2018 - Current",
-    "description": "Lead developer for customer billing and support application with at least 2+ million users"
+    "company": "Multi-Agent Robot Systems Lab",
+    "jobTitle": "Software Developer",
+    "years": "2014 - 2018",
+    "description": "Synchronised NPC behaviour across clients using mirror and configured REST APIs for inventory transactions"
   },
   {
     "id": "1",
-    "company": "Ursinus College",
-    "jobTitle": "B.S. in Computer Science",
-    "years": "2014 - 2018",
-    "description": "Completed coursework involved algorithms, data structures and object oriented programming"
+    "company": "CJSF Radio Systems",
+    "jobTitle": "Front End Developer",
+    "years": "2024 April - August",
+    "description": "Develoed responsive user interface leveraging Drupal's theming layer and PHP to create dynamic content."
+  },
+  {
+    "id": "2",
+    "company": "Horizon Expedition",
+    "jobTitle": "Back End Developer",
+    "years": "2018 - 2020",
+    "description": "Developed and maintained the company's website and internal applications."
+  },
+  {
+    "id": "3",
+    "company": "Simon Fraser University",
+    "jobTitle": "Computer Science Tutor",
+    "years": "2024",
+    "description": "Assisted students with discrete mathematics programming concepts, debugging code, and understanding foundational computing science topics."
   }
 ]

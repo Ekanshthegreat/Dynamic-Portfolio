@@ -73,7 +73,7 @@ const Footer = () => {
           <StyledFooterList>
             <StyledListItemLink
               sx={{ marginRight: "-0.3rem" }}
-              href="https://www.linkedin.com/in/ekansh-chawla/"
+              href="https://ca.linkedin.com/in/ekansh-chawla-80a3b2218"
               target="_blank"
             >
               <svg
@@ -182,9 +182,9 @@ const Footer = () => {
             </StyledListItemLink>
           </StyledFooterList>
         )}
-        <StyledFooterText>Developed by Maximilian Oberholtzer</StyledFooterText>
+        <StyledFooterText>Developed by Ekansh Chawla</StyledFooterText>
         <StyledFooterText sx={{ marginBottom: "1rem" }}>
-          <StyledViewCodeLink href="https://github.com/Maximilian-Oberholtzer/maximilian-portfolio">
+          <StyledViewCodeLink href="https://github.com/Ekanshthegreat/Dynamic-Portfolio">
             View the code <GitHub sx={{ marginBottom: "-0.2rem" }} />
           </StyledViewCodeLink>
         </StyledFooterText>

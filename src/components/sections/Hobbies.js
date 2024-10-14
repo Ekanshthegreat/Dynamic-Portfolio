@@ -100,7 +100,7 @@ const Hobbies = () => {
               <StyledDivider />
             </StyledGenericTitle>
             <StyledGenericSubText component="h1">
-              Aside from making applications, these are the things I that enjoy
+              Aside from coding and tinkering with electronics, these are the things I that enjoy
               to do for fun! Under each of them I have included my favorite
               achievement.
             </StyledGenericSubText>

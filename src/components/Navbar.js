@@ -222,7 +222,7 @@ const Navbar = () => {
             <StyledResumeLink
               href={
                 process.env.PUBLIC_URL +
-                "/Maximilian Oberholtzer Resume 2023.pdf"
+                "/Ekansh_resume.pdf"
               }
               target="_blank"
             >
@@ -304,7 +304,7 @@ const Navbar = () => {
       >
         <StyledResumeLink
           href={
-            process.env.PUBLIC_URL + "/Maximilian Oberholtzer Resume 2023.pdf"
+            process.env.PUBLIC_URL + "/Ekansh_resume.pdf"
           }
           target="_blank"
         >

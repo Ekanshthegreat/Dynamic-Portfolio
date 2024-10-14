@@ -116,8 +116,7 @@ const Experience = () => {
             <StyledDivider />
           </StyledGenericTitle>
           <StyledGenericSubText component="h1">
-            Since graduating from Ursinus College in 2018, I have worked as a
-            full stack software engineer in the professional space.
+            I am currently a 3rd year Computer Science student at Simon Fraser University but I have also had the opportunity to work at a few companies in the past. Here are a few of the places I have worked at!
           </StyledGenericSubText>
         </StyledGenericContainer>
 

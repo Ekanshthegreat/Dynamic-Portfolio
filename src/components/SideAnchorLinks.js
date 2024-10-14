@@ -56,7 +56,7 @@ const SideAnchorLinks = () => {
     <>
       <StyledLeftAnchor>
         <StyledAnchorLink
-          href="https://www.linkedin.com/in/max-oberholtzer/"
+          href="https://ca.linkedin.com/in/ekansh-chawla-80a3b2218"
           target="_blank"
           aria-label="LinkedIn"
         >
@@ -73,7 +73,7 @@ const SideAnchorLinks = () => {
           </svg>
         </StyledAnchorLink>
         <StyledAnchorLink
-          href="https://github.com/Maximilian-Oberholtzer"
+          href="https://github.com/Ekanshthegreat"
           target="_blank"
           aria-label="Github"
         >
@@ -90,7 +90,7 @@ const SideAnchorLinks = () => {
           </svg>
         </StyledAnchorLink>
         <StyledAnchorLink
-          href="mailto:max.oberholtzer@yahoo.com"
+          href="mailto:eca162@sfu.ca"
           sx={{ transform: "scale(0.90)" }}
         >
           <svg
