@@ -126,7 +126,7 @@ const Footer = () => {
               </svg>
             </StyledListItemLink>
             <StyledListItemLink
-              href="https://app.universaltennis.com/profiles/51049"
+              href="https://hackaday.io/ekanshthegreat"
               target="_blank"
             >
               <svg
@@ -136,7 +136,7 @@ const Footer = () => {
                 viewBox="0 0 1024 1024"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <title>Universal Tennis Rating</title>
+                <title>Hackaday Project</title>
                 <UTRSvgPath />
               </svg>
             </StyledListItemLink>
