@@ -113,7 +113,7 @@ const SideAnchorLinks = () => {
       </StyledLeftAnchor>
       <StyledRightAnchor>
         <StyledAnchorLink
-          href="https://app.universaltennis.com/profiles/51049"
+          href=""
           target="_blank"
           aria-label="Tennis"
         >
@@ -129,7 +129,7 @@ const SideAnchorLinks = () => {
           </svg>
         </StyledAnchorLink>
         <StyledAnchorLink
-          href="https://rocketleague.tracker.network/rocket-league/profile/steam/76561198262193029/overview"
+          href=""
           target="_blank"
           aria-label="Rocket League"
         >
@@ -145,7 +145,7 @@ const SideAnchorLinks = () => {
           </svg>
         </StyledAnchorLink>
         <StyledAnchorLink
-          href="https://www.worldcubeassociation.org/persons/2022OBER04"
+          href=""
           target="_blank"
           aria-label="Cube"
         >
