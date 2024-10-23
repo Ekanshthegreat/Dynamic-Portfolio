@@ -5,7 +5,16 @@
     "image": "../images/Wastewise.png",
     "description": "Automated Garbage Sorting using Object Detection and AI",
     "skills": ["React", "RAG", "Neo4j", "OpenAI"],
-    "githubLink": "https://github.com/Maximilian-Oberholtzer/mellow-heads-nft"
+    "githubLink": "https://github.com/teddymalhan/wastewise"
+  },
+  
+  {
+    "id": "3",
+    "title": "Old Website",
+    "image": "../images/oldwebsite.png",
+    "description": "Old static portfolio website ",
+    "skills": ["Bootstrap", "HTML", "CSS", "JavaScript"],
+    "githubLink": "https://github.com/Ekanshthegreat/Personal-Portfolio"
   },
   {
     "id": "1",
@@ -13,7 +22,7 @@
     "image": "../images/groccerystore.jpg",
     "description": "System to manage inventory, orders and clients.",
     "skills": ["MySQL", "Flask", "JavaScript", "HTML", "CSS"],
-    "githubLink": "https://github.com/Maximilian-Oberholtzer/letter-swap"
+    "githubLink": "https://github.com/Ekanshthegreat/GrocceryStoreDMS"
   },
   {
     "id": "2",
@@ -21,14 +30,6 @@
     "image": "../images/terminalvoice.png",
     "description": "Software enabling voice control over the terminal",
     "skills": ["Node.js", "Expo", "Vosk API"],
-    "githubLink": "https://github.com/Maximilian-Oberholtzer/replay-analysis-tool"
-  },
-  {
-    "id": "3",
-    "title": "Old Website",
-    "image": "../images/oldwebsite.png",
-    "description": "Old static portfolio website ",
-    "skills": ["Swift", "SpriteKit", "Xcode", "Game Center"],
     "githubLink": ""
   }
 ]
