@@ -9,8 +9,8 @@
     "largeHeight": "8rem",
     "strokeWidth": "7",
     "viewBox": "0 0 512 512",
-    "transform": null,
-    "animationDuration": 18
+    "transform": " translate(-45) scale(0.43)",
+    "animationDuration": 25
   },
   {
     "id": "1",
