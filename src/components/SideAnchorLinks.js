@@ -123,8 +123,10 @@ const SideAnchorLinks = () => {
             height="44px"
             viewBox="0 0 1024 1024"
             xmlns="http://www.w3.org/2000/svg"
+            transform="translate(100, 0)"
+            scale="2"
           >
-            <title>Universal Tennis Rating</title>
+            <title>Hackaday</title>
             <UTRSvgPath />
           </svg>
         </StyledAnchorLink>

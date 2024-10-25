@@ -10,25 +10,25 @@
     "strokeWidth": "7",
     "viewBox": "0 0 512 512",
     "transform": " translate(-140, -60) scale(0.53)",
-    "animationDuration": 18
+    "animationDuration": 50
   },
   {
     "id": "1",
-    "name": "Speed Cubing",
-    "description": "Fastest recorded 3x3 solve time is currently 9.94 seconds",
+    "name": "AR/VR Development",
+    "description": "Passionate about creating immersive experiences in augmented and virtual reality.",
     "smallWidth": "8rem",
     "largeWidth": "12rem",
     "smallHeight": "6rem",
     "largeHeight": "7rem",
-    "strokeWidth": "7",
+    "strokeWidth": "180",
     "viewBox": "0 0 512 512",
-    "transform": "scale(0.4) ",
-    "animationDuration": 28
+    "transform": "translate(530,265) scale(-0.05)",
+    "animationDuration": 22
   },
   {
     "id": "2",
-    "name": "Rocket League",
-    "description": "Top 100 on global leaderboard in Solo Duel game mode",
+    "name": "Gaming",
+    "description": "Enjoy not just building games but also immersing myself in them.",
     "smallWidth": "10rem",
     "largeWidth": "12rem",
     "smallHeight": "6rem",
