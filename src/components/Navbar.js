@@ -325,15 +325,18 @@ const Navbar = () => {
                 flexGrow: 1,
               }}
             >
-              <svg
+              <svg 
                 viewBox="0 0 59 58"
                 style={{
+                  transform: "rotate(-90deg)",
                   width: "44px",
+                  
                   animation: !hasAnimated
                     ? collapse
                       ? "fadeIn"
                       : "fadeInDown"
                     : "",
+                    
                   animationDuration: collapse ? "2s" : "1s",
                 }}
               >
