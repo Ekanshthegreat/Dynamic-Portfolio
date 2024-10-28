@@ -30,6 +30,6 @@
     "image": "../images/terminalvoice.png",
     "description": "Software enabling voice control over the terminal",
     "skills": ["Node.js", "Expo", "Vosk API"],
-    "githubLink": ""
+    "githubLink": "https://github.com/Ekanshthegreat/TerminalVoice"
   }
 ]

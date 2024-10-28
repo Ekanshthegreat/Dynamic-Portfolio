@@ -113,7 +113,7 @@ const SideAnchorLinks = () => {
       </StyledLeftAnchor>
       <StyledRightAnchor>
         <StyledAnchorLink
-          href=""
+          href="https://hackaday.io/ekanshthegreat"
           target="_blank"
           aria-label="Tennis"
         >
@@ -123,15 +123,14 @@ const SideAnchorLinks = () => {
             height="44px"
             viewBox="0 0 1024 1024"
             xmlns="http://www.w3.org/2000/svg"
-            transform="translate(100, 0)"
-            scale="2"
+            
           >
             <title>Hackaday</title>
             <UTRSvgPath />
           </svg>
         </StyledAnchorLink>
         <StyledAnchorLink
-          href=""
+          href="https://hackaday.io/ekanshthegreat"
           target="_blank"
           aria-label="Rocket League"
         >
@@ -147,7 +146,7 @@ const SideAnchorLinks = () => {
           </svg>
         </StyledAnchorLink>
         <StyledAnchorLink
-          href=""
+          href="https://hackaday.io/ekanshthegreat"
           target="_blank"
           aria-label="Cube"
         >

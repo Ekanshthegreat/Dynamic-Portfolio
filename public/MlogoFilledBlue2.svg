@@ -5,7 +5,7 @@
 	<pattern id="dna_4146799760" patternUnits="userSpaceOnUse" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAOklEQVQ4T2O8fv36AQYGBhCmCmC8fv16g6amZgNVTGNgYBg1kPKQHA3D0TAkIwRGkw0ZgYamZQSGIQApY1AaL/I1PgAAAABJRU5ErkJggg==" x="0" y="0" width="20" height="20">
 	</pattern>
 </defs>
-<path style="fill: url(#dna_4146799760); mix-blend-mode: source-over; fill-opacity: 1; vector-effect: non-scaling-stroke;" sketchjsTool="rectangle" d="M0 0 L59 0 59 58 0 58 z"/>
+<path transform="rotate(45)" style="fill: url(#dna_4146799760); mix-blend-mode: source-over; fill-opacity: 1; vector-effect: non-scaling-stroke;" sketchjsTool="rectangle" d="M0 0 L59 0 59 58 0 58 z"/>
 <g style="mix-blend-mode: source-over;" sketchjsTool="fancyText" transform="matrix(1,1.7763568394002505e-15,-1.7763568394002505e-15,1,-10.000000000000796,-10.579685592288456)">
 	<g sketchjsUid="1">
 		<g sketchjsUid="2" style="paint-order: stroke fill markers;">
