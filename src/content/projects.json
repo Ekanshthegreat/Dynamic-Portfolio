@@ -7,9 +7,25 @@
     "skills": ["React", "RAG", "Neo4j", "OpenAI"],
     "githubLink": "https://github.com/teddymalhan/wastewise"
   },
+  {
+    "id": "1",
+    "title": "JavaNinjaGame",
+    "image": "../images/ninjagame.png",
+    "description": "An interactive 2D game developed using Java, utilizing the Java Swing library",
+    "skills": ["Java Swing", "JUnit", "Multithreading", "EclEmma", "Apache Maven"],
+    "githubLink": "https://github.com/Ekanshthegreat/JavaNinjaGame"
+  },
+  {
+    "id": "2",
+    "title": "Metro Vancouver 9-1-1 Emergency Call Web Application",
+    "image": "../images/home2.png",
+    "description": "Software enabling voice control over the terminal",
+    "skills": ["MD5 hash", "Leaflet maps api with OpenStreetMaps", "DOM Storage API"],
+    "githubLink": "https://github.com/ryotakc/cmpt272-project"
+  },
   
   {
-    "id": "3",
+    "id": "4",
     "title": "Old Website",
     "image": "../images/oldwebsite.png",
     "description": "Old static portfolio website ",
@@ -17,7 +33,7 @@
     "githubLink": "https://github.com/Ekanshthegreat/Personal-Portfolio"
   },
   {
-    "id": "1",
+    "id": "5",
     "title": "Groccery Store Database Management System", 
     "image": "../images/groccerystore.jpg",
     "description": "System to manage inventory, orders and clients.",
@@ -25,11 +41,14 @@
     "githubLink": "https://github.com/Ekanshthegreat/GrocceryStoreDMS"
   },
   {
-    "id": "2",
+    "id": "3",
     "title": "Terminal Voice",
     "image": "../images/terminalvoice.png",
     "description": "Software enabling voice control over the terminal",
     "skills": ["Node.js", "Expo", "Vosk API"],
     "githubLink": "https://github.com/Ekanshthegreat/TerminalVoice"
   }
+  
+  
 ]
+
