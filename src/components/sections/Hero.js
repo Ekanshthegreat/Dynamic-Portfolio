@@ -136,7 +136,7 @@ const Hero = ({ img }) => {
             </StyledHeroTitle>
             <StyledHeroSubText component="h1" variant="h5">
               Full stack Software Developer who enjoys solving real-world problems with tech, and making games. 
-              designs
+      
             </StyledHeroSubText>
           </StyledHeroText>
         </StyledHeroGrid>
