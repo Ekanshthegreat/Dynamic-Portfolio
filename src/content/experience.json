@@ -1,27 +1,41 @@
 [
   {
     "id": "0",
-    "company": "Multi-Agent Robot Systems Lab",
+    "company": "Amazon",
     "jobTitle": "Software Developer",
-    "years": "2024 January - 2024 May",
-    "description": "Synchronised NPC behaviour across clients using mirror and configured REST APIs for inventory transactions"
+    "years": "2025 May - 2025 Sep",
+    "description": "Worked under the payments and preferences team to support features for Prime Video"
   },
   {
     "id": "1",
+    "company": "SFU Create Lab",
+    "jobTitle": "Software Developer",
+    "years": "2025 Sep - 2025 Dec",
+    "description": "Contributing to Modern Carbon Emission Modelling"
+  },
+  {
+    "id": "2",
+    "company": "Multi-Agent Robot Systems Lab",
+    "jobTitle": "Robotics Software Developer",
+    "years": "2024 January - 2024 May",
+    "description": "Developed pathfinding algorithims in ROS. (SLAM - Simultaneous Localization and Mapping)"
+  },
+  {
+    "id": "3",
     "company": "CJSF Radio Systems",
     "jobTitle": "Front End Developer",
     "years": "2024 May - 2024 August",
     "description": "Develoed responsive user interface leveraging Drupal's theming layer and PHP to create dynamic content."
   },
   {
-    "id": "2",
+    "id": "4",
     "company": "Horizon Expedition",
     "jobTitle": "Back End Developer",
-    "years": "2024 September - Current",
-    "description": "Developed and maintained the company's website and internal applications."
+    "years": "2024 September - 2024 Dec",
+    "description": "Synchronised NPC behaviour across clients using mirror and configured REST APIs for inventory transactions."
   },
   {
-    "id": "3",
+    "id": "5",
     "company": "Simon Fraser University",
     "jobTitle": "Computer Science Tutor",
     "years": "2024 May - 2024 August",
