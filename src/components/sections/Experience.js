@@ -116,7 +116,7 @@ const Experience = () => {
             <StyledDivider />
           </StyledGenericTitle>
           <StyledGenericSubText component="h1">
-            I am currently a 3rd year Computer Science student at Simon Fraser University but I have also had the opportunity to work at a few companies in the past. Here are a few of the places I have worked at!
+            I am currently a 4th year Computer Science student at Simon Fraser University but I have also had the opportunity to work at a few companies in the past. Here are a few of the places I have worked at!
           </StyledGenericSubText>
         </StyledGenericContainer>
 

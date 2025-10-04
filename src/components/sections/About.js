@@ -140,7 +140,7 @@ const About = () => {
             <StyledDivider />
           </StyledGenericTitle>
           <StyledGenericSubText component="h1">
-          Hello! My name is Ekansh Chawla, and I am a third-year Computer Science student with a passion for developing web and mobile applications. Over the past few years, I've created Unity games and worked on various software development projects, which have deepened my interest in building responsive web designs using React. Below are some of the languages and technologies I have experience with.
+          Hello! My name is Ekansh Chawla, and I am a third-year Computer Science student with a passion for developing web and mobile applications. Over the past few years, I've worked on various software projects, both in the industry and for personal growth, which have deepened my interest in technology. Below are some of the languages and technologies I have experience with.
           </StyledGenericSubText>
           <StyledScrollingContainer>
             <StyledScrollingBelt>
