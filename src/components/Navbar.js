@@ -87,21 +87,6 @@ const StyledAppBarDrawerLink = styled("a")(({ theme }) => ({
     },
   },
 }));
-const StyledResumeLink = styled("a")(({ theme }) => ({
-  cursor: "pointer",
-  textDecoration: "none",
-  "& p": {
-    borderRadius: "8px !important",
-    padding: "0.25rem 0.5rem",
-    fontSize: "1.2rem",
-    backgroundColor: theme.palette.backgroundSecondary.main + " !important",
-    color: "#FFFFFF",
-    transition: "background-color 200ms ease-in-out 0s !important",
-    "&:hover": {
-      backgroundColor: theme.palette.buttonHover.main + " !important",
-    },
-  },
-}));
 const StyledDrawerIcon = styled(MenuIcon)(({ theme }) => ({
   color: theme.palette.textMain.main,
   fontSize: "2rem !important",
@@ -222,25 +207,6 @@ const Navbar = () => {
           role="presentation"
           onKeyDown={toggleDrawer(false)}
         >
-          <StyledDrawerList>
-            <StyledResumeLink
-              href={process.env.PUBLIC_URL + "/resume_quant.pdf"}
-              target="_blank"
-            >
-              <Typography
-                sx={{
-                  padding: "0.5rem 1rem !important",
-                  fontSize: "1.75rem !important",
-                  transition:
-                    "opacity 600ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, background-color 200ms ease-in-out 0s !important",
-                  animation: "fadeIn",
-                  animationDuration: "2s",
-                }}
-              >
-                Resume
-              </Typography>
-            </StyledResumeLink>
-          </StyledDrawerList>
           {navbarData.map((data) => (
             <StyledDrawerList key={data.id}>
               <StyledAppBarDrawerLink
@@ -293,17 +259,6 @@ const Navbar = () => {
           </StyledAppBarLink>
         </div>
       ))}
-      <div
-        style={{ paddingLeft: "4px" }}
-        className={!hasAnimated ? "animate__animated animate__fadeInDown" : ""}
-      >
-        <StyledResumeLink
-          href={process.env.PUBLIC_URL + "/resume_quant.pdf"}
-          target="_blank"
-        >
-          <Typography>Resume</Typography>
-        </StyledResumeLink>
-      </div>
     </>
   );
 

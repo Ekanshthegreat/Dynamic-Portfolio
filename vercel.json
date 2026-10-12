@@ -12,12 +12,5 @@
       "source": "/projects/nodeai",
       "destination": "/projects/nodeai.html"
     }
-  ],
-  "redirects": [
-    {
-      "source": "/Ekansh_Resume.pdf",
-      "destination": "/resume_quant.pdf",
-      "permanent": false
-    }
   ]
 }

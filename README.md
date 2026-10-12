@@ -26,7 +26,7 @@ The production preview runs at http://127.0.0.1:4173. Python 3 is required only 
 - `src/Theme.js`: original light/dark MUI themes.
 - `src/index.css`: original carousel styles and accessibility additions.
 - `src/detail.css`: article styles that use the existing theme through `DetailLayout`.
-- `resume/resume_quant.tex`: editable one-page resume. Compile with pdfLaTeX or upload the file to Overleaf, then copy the PDF to both `public/resume_quant.pdf` and `public/Ekansh_resume.pdf` (legacy URL).
+- `resume/resume_quant.tex`: editable one-page resume. Compile with pdfLaTeX or upload the file to Overleaf, keep the resulting PDF in the `resume/` folder. Resume downloads are intentionally excluded from the website.
 - `public/research/rebalancing-mechanism.png`: original manuscript figure, CC BY 4.0, Ekansh Chawla.
 
 Keep project scope and performance claims tied to source evidence. `docs/CONTENT_REVIEW.md` records the source material and deliberate omissions. Future articles can use the same `page`, `article-grid`, and `prose` components/classes; no placeholder article is published.
@@ -38,7 +38,7 @@ Use the existing Dynamic-Portfolio repository and Vercel project. The owner auth
 1. Commit and push reviewed changes to the existing repository. If Vercel is connected to `main`, its normal deployment workflow will run from that push.
 2. Use the existing Create React App configuration, build command `npm run build`, output directory `build`, and install command `npm ci`.
 3. `vercel.json` maps detail URLs to their pre-rendered pages and preserves direct-page refreshes. Unknown routes use the generated 404 page. If hosting elsewhere, use equivalent rewrites. `_redirects` supports Netlify.
-4. After deployment, check each direct detail URL, the resume download, the paper links, and mobile navigation.
+4. After deployment, check each direct detail URL, the paper links, and mobile navigation.
 5. If the domain changes, update `public/index.html`, `public/robots.txt`, `public/sitemap.xml`, `scripts/prerender.cjs`, `src/App.js`, and the resume portfolio link.
 
 Existing homepage components and assets remain in use. No dependency versions were upgraded. The previous editorial redesign was backed up outside this repository before the integration was corrected.

@@ -7,9 +7,7 @@ class Handler(SimpleHTTPRequestHandler):
     def do_GET(self):
         route = urlsplit(self.path).path
         candidate = route.rstrip('/') + '.html'
-        if route in ('/Ekansh_Resume.pdf', '/Ekansh_resume.pdf'):
-            self.path = '/resume_quant.pdf'
-        elif route != '/' and Path(candidate.lstrip('/')).is_file():
+        if route != '/' and Path(candidate.lstrip('/')).is_file():
             self.path = candidate
         elif route == '/':
             self.path = '/index.html'

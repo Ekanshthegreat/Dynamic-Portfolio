@@ -157,7 +157,6 @@ const Hero = ({ img }) => {
             <div className="hero-links">
               <a href="/#Projects">Selected work</a>
               <a href="/research">Research paper</a>
-              <a href="/resume_quant.pdf">Resume</a>
             </div>
           </StyledHeroText>
         </StyledHeroGrid>
