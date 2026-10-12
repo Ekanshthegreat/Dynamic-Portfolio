@@ -1,8 +1,25 @@
 [
   {
+    "id": "mercury",
+    "title": "Mercury",
+    "description": "C++20 price-time-priority order book and state-dependent market simulator. Invariant/property tests and a latency benchmark.",
+    "skills": ["C++20", "CMake", "Simulation"],
+    "detailLink": "/projects/mercury",
+    "status": "GitHub source \u2014 coming soon"
+  },
+  {
+    "id": "nodeai",
+    "title": "NodeAI",
+    "image": "/images/nodeai-logo.svg",
+    "description": "Robot-fleet orchestration prototype with typed mission plans, routing, telemetry adapters, and fault-triggered reassignment.",
+    "skills": ["TypeScript", "WebSockets", "MQTT"],
+    "detailLink": "/projects/nodeai",
+    "githubLink": "https://github.com/Ekanshthegreat/NodeAI-rework"
+  },
+  {
     "id": "0",
     "title": "WasteWise",
-    "image": "../images/Wastewise.png",
+    "image": "/images/Wastewise.png",
     "description": "Automated Garbage Sorting using Object Detection and AI",
     "skills": ["React", "RAG", "Neo4j", "OpenAI"],
     "githubLink": "https://github.com/teddymalhan/wastewise"
@@ -10,32 +27,41 @@
   {
     "id": "1",
     "title": "JavaNinjaGame",
-    "image": "../images/ninjagame.png",
+    "image": "/images/ninjagame.png",
     "description": "An interactive 2D game developed using Java, utilizing the Java Swing library",
-    "skills": ["Java Swing", "JUnit", "Multithreading", "EclEmma", "Apache Maven"],
+    "skills": [
+      "Java Swing",
+      "JUnit",
+      "Multithreading",
+      "EclEmma",
+      "Apache Maven"
+    ],
     "githubLink": "https://github.com/Ekanshthegreat/JavaNinjaGame"
   },
   {
     "id": "2",
     "title": "Metro Vancouver 9-1-1 Emergency Call Web Application",
-    "image": "../images/home2.png",
-    "description": "Software enabling voice control over the terminal",
-    "skills": ["MD5 hash", "Leaflet maps api with OpenStreetMaps", "DOM Storage API"],
+    "image": "/images/home2.png",
+    "description": "Web application for exploring Metro Vancouver emergency-call information with interactive maps.",
+    "skills": [
+      "MD5 hash",
+      "Leaflet maps api with OpenStreetMaps",
+      "DOM Storage API"
+    ],
     "githubLink": "https://github.com/ryotakc/cmpt272-project"
   },
-  
   {
     "id": "4",
     "title": "Old Website",
-    "image": "../images/oldwebsite.png",
+    "image": "/images/oldwebsite.png",
     "description": "Old static portfolio website ",
     "skills": ["Bootstrap", "HTML", "CSS", "JavaScript"],
     "githubLink": "https://github.com/Ekanshthegreat/Personal-Portfolio"
   },
   {
     "id": "5",
-    "title": "Groccery Store Database Management System", 
-    "image": "../images/groccerystore.jpg",
+    "title": "Grocery Store Database Management System",
+    "image": "/images/groccerystore.jpg",
     "description": "System to manage inventory, orders and clients.",
     "skills": ["MySQL", "Flask", "JavaScript", "HTML", "CSS"],
     "githubLink": "https://github.com/Ekanshthegreat/GrocceryStoreDMS"
@@ -43,12 +69,9 @@
   {
     "id": "3",
     "title": "Terminal Voice",
-    "image": "../images/terminalvoice.png",
+    "image": "/images/terminalvoice.png",
     "description": "Software enabling voice control over the terminal",
     "skills": ["Node.js", "Expo", "Vosk API"],
     "githubLink": "https://github.com/Ekanshthegreat/TerminalVoice"
   }
-  
-  
 ]
-

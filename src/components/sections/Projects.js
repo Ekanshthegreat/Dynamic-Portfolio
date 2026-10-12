@@ -37,17 +37,26 @@ const StyledProjectsGrid = styled(Grid)(({ theme }) => ({
   marginTop: "0 !important",
   padding: "1rem",
 }));
-const StyledProjectsGridItem = styled(Grid)(({ theme }) => ({
+const StyledProjectsGridItem = styled(Grid, {
+  shouldForwardProp: (prop) => prop !== "inView",
+})(({ theme }) => ({
   position: "relative",
   display: "flex",
   height: "280px",
   marginBottom: "2.5rem",
   borderRadius: "1rem",
   border: `0.25rem solid ${theme.palette.backgroundSecondary.main}70`,
-  backgroundColor: `${theme.palette.backgroundSecondary.main}70`,
+  backgroundColor: "#0B132B",
   paddingTop: "0 !important",
   paddingLeft: "0 !important",
   overflow: "hidden",
+  "&::after": {
+    content: '""',
+    position: "absolute",
+    inset: 0,
+    background: "linear-gradient(transparent,rgba(11,19,43,0.88))",
+    pointerEvents: "none",
+  },
   alignItems: "flex-end",
   transform: "none",
   transition: "transform 150ms ease-in-out 0s",
@@ -63,7 +72,7 @@ const StyledProjectsGridItem = styled(Grid)(({ theme }) => ({
       },
     },
     "&::after": {
-      opacity: "0.9 !important",
+      opacity: "1 !important",
       content: "''",
       position: "absolute",
       inset: "0px",
@@ -75,7 +84,7 @@ const StyledProjectsGridItem = styled(Grid)(({ theme }) => ({
   [theme.breakpoints.down("md")]: {
     maxWidth: "500px",
     "&::after": {
-      opacity: "0.9 !important",
+      opacity: "1 !important",
       content: "''",
       position: "absolute",
       inset: "0px",
@@ -102,7 +111,7 @@ const StyledProjectsTextField = styled("div")(({ theme }) => ({
   zIndex: "1000 !important",
   transition: "opacity 300ms ease-in-out 0s, transform 300ms ease-in-out 0s",
   transform: "none",
-  opacity: "0",
+  opacity: "1",
   padding: "0rem 1rem",
   color: "white",
   textAlign: "left",
@@ -139,22 +148,6 @@ const StyledProjectsSkillText = styled(Typography)(({ theme }) => ({
     fontSize: "0.7rem !important",
   },
 }));
-const StyledProjectsOpenLink = styled("a")({
-  color: "inherit",
-  "& svg": {
-    padding: "0",
-    minWidth: "0",
-    marginTop: "0.5rem",
-    marginRight: "0.5rem",
-    transform: "none",
-    transition: "transform 200ms",
-  },
-  "&:hover": {
-    "& svg": {
-      transform: "scale(1.15)",
-    },
-  },
-});
 const StyledProjectsGHLink = styled("a")({
   color: "inherit",
   "& svg": {
@@ -181,31 +174,30 @@ const Projects = () => {
   });
 
   return (
-    <Scroll.Element name="Projects">
+    <Scroll.Element name="Projects" id="Projects">
       <StyledGenericRoot ref={projectsContainer}>
         <StyledGenericContainer
           sx={
             projectsContainerInView
               ? { visibility: "visible" }
-              : { visibility: "hidden" }
+              : { visibility: "visible" }
           }
           className={
             projectsContainerInView ? "animate__animated animate__fadeInUp" : ""
           }
         >
-          <StyledGenericTitle component="h1">
+          <StyledGenericTitle component="h2">
             Projects
             <StyledDivider />
           </StyledGenericTitle>
-          <StyledGenericSubText component="h1">
-            Here are a few of my favorite projects that I have built over the
-            past few years!
+          <StyledGenericSubText component="p">
+            Current systems projects and earlier applications I’ve built.
           </StyledGenericSubText>
         </StyledGenericContainer>
         <StyledProjectsContainer>
           <StyledProjectsGrid container rowSpacing={6} columnSpacing={12}>
             {projects.map((project) => (
-              <InView key={project.id} threshold={0.9} triggerOnce={true}>
+              <InView key={project.id} threshold={0.1} triggerOnce={true}>
                 {({ ref, inView }) => (
                   <StyledProjectsGridItem
                     item
@@ -220,16 +212,20 @@ const Projects = () => {
                             animation: "fadeInUp",
                             animationDuration: "1s",
                           }
-                        : { visibility: "hidden" }
+                        : { visibility: "visible" }
                     }
                   >
-                    <StyledProjectsImg
-                      alt={`Image of ${project.title}`}
-                      src={project.image}
-                      referrerPolicy="no-referrer"
-                    />
+                    {project.image && (
+                      <StyledProjectsImg
+                        alt={`Image of ${project.title}`}
+                        src={project.image}
+                        referrerPolicy="no-referrer"
+                      />
+                    )}
                     <StyledProjectsTextField>
-                      <StyledProjectsTitle>{project.title}</StyledProjectsTitle>
+                      <StyledProjectsTitle component="h3">
+                        {project.title}
+                      </StyledProjectsTitle>
                       <StyledProjectsSubText>
                         {project.description}
                       </StyledProjectsSubText>
@@ -240,10 +236,31 @@ const Projects = () => {
                           </StyledProjectsSkillText>
                         ))}
                       </StyledProjectsSkillContainer>
-                      
+
+                      {project.detailLink && (
+                        <StyledProjectsGHLink
+                          href={project.detailLink}
+                          aria-label={`Read about ${project.title}`}
+                          sx={{
+                            right: project.githubLink ? "3rem" : "1rem",
+                            bottom: "1rem",
+                          }}
+                        >
+                          <LaunchIcon />
+                        </StyledProjectsGHLink>
+                      )}
+                      {project.status && (
+                        <Typography
+                          sx={{ color: "white", fontSize: "0.75rem", mt: 1 }}
+                        >
+                          {project.status}
+                        </Typography>
+                      )}
                       {project.githubLink && (
                         <StyledProjectsGHLink
                           href={project.githubLink}
+                          aria-label={`${project.title} source on GitHub`}
+                          rel="noopener noreferrer"
                           target="_blank"
                         >
                           <GitHubIcon />

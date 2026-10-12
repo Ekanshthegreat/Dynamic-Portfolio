@@ -100,28 +100,22 @@ const About = () => {
     triggerOnce: true,
   });
   const technologiesArr = [
-    "Java",
     "C++",
     "Python",
-    "HTML",
-    "Material-UI",
-    "CSS",
-    "Javascript",
-    "mySQL",
-    "React",
+    "Java",
+    "Scala",
+    "TypeScript",
+    "SQL",
+    "AWS",
+    "Akka Streams",
+    "CMake",
+    "JMH",
     "Git",
-    "Swift",
-    "Haskell",
-    "Rust",
-    "Flask",
-    "Unity",
-    "Firebase",
     "Docker",
-    "Maven",
   ];
 
   return (
-    <Scroll.Element name="About">
+    <Scroll.Element name="About" id="About">
       <StyledGenericRoot>
         <StyledGenericContainer
           style={{ overflow: "hidden" }}
@@ -135,18 +129,23 @@ const About = () => {
             aboutContainerInView ? "animate__animated animate__fadeInUp" : ""
           }
         >
-          <StyledGenericTitle component="h1">
+          <StyledGenericTitle component="h2">
             About Me
             <StyledDivider />
           </StyledGenericTitle>
-          <StyledGenericSubText component="h1">
-          Hello! My name is Ekansh Chawla, and I am a 4th year Computer Science student with a passion for developing web and mobile applications. Over the past few years, I've worked on various software projects, both in the industry and for personal growth, which have deepened my interest in technology. Below are some of the languages and technologies I have experience with.
+          <StyledGenericSubText component="p">
+            I’m Ekansh Chawla, a Computing Science student at Simon Fraser
+            University (GPA 3.88; expected graduation September 2027). My work
+            connects production software engineering with independent
+            quantitative research and systems projects. I’m interested in
+            distributed systems, concurrency, C++ performance engineering, and
+            market microstructure.
           </StyledGenericSubText>
           <StyledScrollingContainer>
             <StyledScrollingBelt>
               {technologiesArr.map((item, index) => (
                 <StyledScrollingItem key={index}>
-                  <StyledScrollingText component="h1">
+                  <StyledScrollingText component="p">
                     {item}
                   </StyledScrollingText>
                 </StyledScrollingItem>

@@ -1,0 +1,237 @@
+.project-document {
+  --document-bg: #fff;
+  --document-ink: #0b132b;
+  --document-muted: #53739a;
+  --document-accent: #3e9f9d;
+  --document-line: #5bc0be70;
+  font-family: Jost, Arial, sans-serif;
+}
+.project-document,
+.project-document * {
+  box-sizing: border-box;
+}
+.project-document a {
+  color: inherit;
+  text-decoration: none;
+}
+.project-document a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.project-document .page {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 150px 40px 70px;
+}
+.project-document h1 {
+  font-size: clamp(40px, 5vw, 64px);
+  line-height: 1.15;
+  margin: 24px 0;
+  font-weight: 600;
+}
+.project-document h2 {
+  font-size: 30px;
+  line-height: 1.3;
+  margin: 0 0 20px;
+  font-weight: 600;
+}
+.project-document p {
+  margin: 0;
+}
+.project-document .eyebrow {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  color: var(--document-muted);
+}
+.project-document .back {
+  display: inline-block;
+  font-size: 15px;
+  margin-bottom: 35px;
+}
+.project-document .brand-dot {
+  color: var(--document-accent);
+}
+.project-document .subtitle {
+  font-size: 26px;
+  color: var(--document-muted);
+  line-height: 1.4;
+}
+.project-document .paper-meta {
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+  margin: 25px 0;
+  font-size: 14px;
+}
+.project-document .actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin: 28px 0;
+}
+.project-document .button {
+  display: inline-flex;
+  gap: 24px;
+  align-items: center;
+  padding: 12px 20px;
+  border-radius: 8px;
+  background: var(--document-accent);
+  color: var(--document-button-text, #0B132B);
+}
+.project-document .text-link {
+  font-weight: 500;
+}
+.project-document .abstract {
+  border-top: 2px solid var(--document-line);
+  padding-top: 26px;
+  margin-top: 45px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 30px;
+}
+.project-document .abstract p:last-child,
+.project-document .page-intro {
+  font-size: 18px;
+  line-height: 1.75;
+}
+.project-document .paper-figure {
+  margin: 40px 0;
+  padding: 20px;
+  border: 2px solid var(--document-line);
+  border-radius: 16px;
+  background: white;
+  color: #0b132b;
+}
+.project-document .paper-figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.project-document figcaption {
+  font-size: 13px;
+  line-height: 1.6;
+  margin-top: 15px;
+}
+.project-document .figure-full {
+  display: block;
+  text-decoration: underline;
+  margin-top: 8px;
+}
+.project-document .article-grid {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 30px;
+  margin-top: 50px;
+}
+.project-document aside {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-size: 14px;
+}
+.project-document .prose section {
+  margin-bottom: 42px;
+}
+.project-document .prose p,
+.project-document .prose li {
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 18px;
+}
+.project-document .prose ul {
+  padding-left: 20px;
+}
+.project-document .page-intro {
+  max-width: 700px;
+  margin-top: 24px;
+}
+.project-document .status {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 14px;
+  margin-top: 24px;
+}
+.project-document .status-dot {
+  height: 7px;
+  width: 7px;
+  background: var(--document-accent);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.project-document .source-pending {
+  font-size: 14px;
+  color: var(--document-muted);
+  margin-top: 16px;
+}
+.project-document .architecture {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin: 45px 0;
+  border: 3px solid var(--document-line);
+  border-radius: 20px;
+  padding: 30px;
+}
+.project-document .architecture > div {
+  flex: 1;
+}
+.project-document .architecture span {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: var(--document-muted);
+  margin-bottom: 16px;
+}
+.project-document .architecture strong {
+  font-size: 16px;
+}
+.project-document .architecture p {
+  font-size: 13px;
+  line-height: 1.6;
+  margin-top: 9px;
+}
+.project-document .note {
+  border-left: 3px solid var(--document-accent);
+  padding: 15px 20px;
+  margin: 28px 0;
+}
+.project-document .note p {
+  font-size: 15px;
+  margin: 12px 0 0;
+}
+@media (max-width: 700px) {
+  .project-document .page {
+    padding: 120px 22px 40px;
+  }
+  .project-document .abstract,
+  .project-document .article-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+  .project-document aside {
+    display: none;
+  }
+  .project-document .architecture {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 20px;
+  }
+  .project-document .architecture > b {
+    transform: rotate(90deg);
+  }
+  .project-document .paper-figure {
+    margin: 30px 0;
+    padding: 10px;
+  }
+  .project-document .paper-meta {
+    gap: 10px;
+    flex-direction: column;
+  }
+  .project-document h1 {
+    font-size: 40px;
+  }
+}

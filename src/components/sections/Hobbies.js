@@ -80,7 +80,7 @@ const Hobbies = () => {
   });
 
   return (
-    <Scroll.Element name="Hobbies">
+    <Scroll.Element name="Hobbies" id="Hobbies">
       <StyledGenericRoot ref={hobbiesContainer}>
         <StyledGenericContainer>
           <div
@@ -95,14 +95,14 @@ const Hobbies = () => {
                 : ""
             }
           >
-            <StyledGenericTitle component="h1">
+            <StyledGenericTitle component="h2">
               Hobbies
               <StyledDivider />
             </StyledGenericTitle>
-            <StyledGenericSubText component="h1">
-              Aside from coding and tinkering with electronics, these are the things I that enjoy
-              to do for fun! Under each of them I have included my favorite
-              achievement.
+            <StyledGenericSubText component="p">
+              Aside from coding and tinkering with electronics, these are the
+              things I that enjoy to do for fun! Under each of them I have
+              included my favorite achievement.
             </StyledGenericSubText>
           </div>
 

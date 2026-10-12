@@ -1,0 +1,66 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage[margin=0.62in]{geometry}
+\usepackage[T1]{fontenc}
+\renewcommand{\rmdefault}{ptm}
+\usepackage[hidelinks]{hyperref}
+\ifdefined\pdfgentounicode
+\input{glyphtounicode}
+\pdfgentounicode=1
+\fi
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\renewenvironment{itemize}{\begin{list}{\textbullet}{\setlength{\leftmargin}{13pt}\setlength{\itemsep}{2pt}\setlength{\topsep}{3pt}\setlength{\parsep}{0pt}}}{\end{list}}
+\renewcommand{\section}[1]{\par\vspace{9pt}{\large\bfseries #1}\par\vspace{2pt}\hrule\vspace{5pt}}
+\newcommand{\entry}[4]{\textbf{#1}\hfill #2\\\textit{#3}\hfill #4}
+\begin{document}
+{\LARGE\bfseries Ekansh Chawla}\\[4pt]
+Vancouver, BC $\cdot$ \href{mailto:eca162@sfu.ca}{eca162@sfu.ca} $\cdot$ \href{https://github.com/Ekanshthegreat}{GitHub} $\cdot$ \href{https://ca.linkedin.com/in/ekansh-chawla-80a3b2218}{LinkedIn} $\cdot$ \href{https://dynamic-portfolio-pi.vercel.app/}{Portfolio}
+
+\section{Education}
+\entry{Simon Fraser University}{Expected September 2027}{B.Sc. in Computing Science}{GPA: 3.88}
+
+\section{Experience}
+\entry{Amazon Web Services}{May--September 2026}{Software Development Engineer Intern}{}
+\begin{itemize}
+\item Built a Java cross-stack reference detection and generation engine for CloudFormation, reducing multi-day stack reorganization workflows to a single API call.
+\item Implemented directed-graph dependency resolution with cycle detection, recursive AST traversal, and context-aware generation for five CloudFormation intrinsic function types.
+\item Engineered atomic resource-ownership transfers with DynamoDB transactions, SWF orchestration, and idempotent retries for zero-downtime infrastructure migrations.
+\end{itemize}
+\entry{Visier}{January--April 2026}{Full-Stack Developer Intern}{}
+\begin{itemize}
+\item Optimized concurrent analytics pipelines using Scala, Akka Streams, and Futures; reduced API latency by more than 30\% through batching and caching.
+\item Built Angular/RxJS dashboards for real-time analytics and integrated LangSmith-based agent workflows to support nontechnical insight discovery.
+\end{itemize}
+\entry{Amazon}{May--September 2025}{Software Development Engineer Intern}{}
+\begin{itemize}
+\item Built an SPI-based payment-preference plugin architecture, reducing preference-related database calls by 15\%.
+\item Improved concurrent state management with thread-safe singletons and lazy initialization; reduced contention by 35\% in 500-thread JMH benchmarks.
+\item Maintained more than 100 unit tests and 40 integration tests using JUnit and Mockito in CI/CD workflows.
+\end{itemize}
+
+\section{Research}
+\textbf{\href{https://zenodo.org/records/23298207}{Fewer Rebalances, Lower Costs? Target Dynamics and Portfolio Implementation}}\\
+\textit{Independent working paper; Zenodo, October 2026}
+\begin{itemize}
+\item Built a Python research framework comparing calendar and deviation-based portfolio rebalancing with lagged execution, self-financing accounting, transaction costs, and paired block-bootstrap inference.
+\item Found 48.5\% fewer rebalance events but only 2.7\% less traded notional in the primary 2015--2025 comparison; quantified tracking error and robustness with paired block-bootstrap confidence intervals.
+\end{itemize}
+
+\section{Selected Projects}
+\textbf{Mercury}\hfill \textit{C++20, CMake}
+\begin{itemize}
+\item Implemented a price-time-priority order book and state-dependent stochastic simulator with seeded randomness, a virtual clock, configurable order flow, and event-level recording.
+\item Added invariant and property tests, simulator reproducibility and parameter-response checks, a submission-latency benchmark, and sanitizer build support.
+\end{itemize}
+
+\textbf{\href{https://github.com/Ekanshthegreat/NodeAI-rework}{NodeAI}}\hfill \textit{TypeScript, React, WebSockets, MQTT}
+\begin{itemize}
+\item Built a fleet-orchestration prototype with schema-validated mission plans, grid pathfinding, telemetry adapters, and policy-based reassignment for blocked or low-battery robots.
+\end{itemize}
+
+\section{Technical Skills}
+\textbf{Languages:} C++, Python, Java, Scala, TypeScript, SQL\\
+\textbf{Systems:} Distributed systems, concurrency, graph algorithms, event-driven simulation, performance profiling\\
+\textbf{Tools:} AWS, CloudFormation, DynamoDB, Akka Streams, CMake, JMH, JUnit, Git, Docker
+\end{document}

@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Typography, styled } from "@mui/material";
-import { useNavigate } from "react-router-dom";
 import "animate.css";
 
 //Component styles//
@@ -32,26 +31,14 @@ const Styled404SubText = styled(Typography)(({ theme }) => ({
 //End component style//
 
 const NotFound404 = () => {
-  const [fadeOut, setFadeOut] = useState(false);
-  const navigate = useNavigate();
-
-  useEffect(() => {
-    const reloadPageTimer = setTimeout(() => {
-      navigate("/");
-    }, 2900);
-
-    setTimeout(() => {
-      setFadeOut(true);
-    }, 2000);
-
-    return () => clearTimeout(reloadPageTimer);
-  }, [navigate]);
-
   return (
     <Styled404Root>
-      <Styled404Container fadeOut={fadeOut}>
+      <Styled404Container fadeOut={false}>
         <Styled404Text>404</Styled404Text>
-        <Styled404SubText>Page Not Found :&#40;</Styled404SubText>
+        <Styled404SubText>Page Not Found</Styled404SubText>
+        <a href="/" style={{ color: "inherit" }}>
+          Back to home
+        </a>
       </Styled404Container>
     </Styled404Root>
   );

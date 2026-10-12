@@ -19,7 +19,6 @@ import {
   Slide,
   styled,
 } from "@mui/material";
-import { Link } from "react-scroll";
 
 //Component Styles//
 const StyledAppBarContainer = styled("div")(({ theme }) => ({
@@ -34,7 +33,9 @@ const StyledAppBarContainer = styled("div")(({ theme }) => ({
     width: "100vw !important",
   },
 }));
-const StyledAppBar = styled(AppBar)(({ theme, isScrolled }) => ({
+const StyledAppBar = styled(AppBar, {
+  shouldForwardProp: (prop) => prop !== "isScrolled",
+})(({ theme, isScrolled }) => ({
   transition:
     "all 0.4s cubic-bezier(0.645,0.045,0.355,1), background-color 0ms !important",
   transitionDelay: "0.1s",
@@ -47,7 +48,7 @@ const StyledAppBar = styled(AppBar)(({ theme, isScrolled }) => ({
     padding: isScrolled ? "0.5rem 2rem 0.5rem 2rem" : "1rem 2rem 1rem 2rem",
   },
 }));
-const StyledAppBarLink = styled(Link)(({ theme }) => ({
+const StyledAppBarLink = styled("a")(({ theme }) => ({
   textDecoration: "none",
   "& p": {
     color: theme.palette.textMain.main + " !important",
@@ -73,7 +74,7 @@ const StyledAppBarButton = styled(Button)(({ theme }) => ({
     transform: "translateY(-2px)",
   },
 }));
-const StyledAppBarDrawerLink = styled(Link)(({ theme }) => ({
+const StyledAppBarDrawerLink = styled("a")(({ theme }) => ({
   "& p": {
     animation: "fadeIn",
     animationDuration: "2s",
@@ -166,7 +167,9 @@ const Navbar = () => {
 
   //save the user's selected color theme choice
   useEffect(() => {
-    window.localStorage.setItem("theme", theme);
+    try {
+      window.localStorage.setItem("theme", theme);
+    } catch {}
   }, [theme]);
 
   //hide the AppBar when scrolling down
@@ -175,7 +178,6 @@ const Navbar = () => {
   });
 
   const toggleDrawer = (isOpen) => (event) => {
-    event.preventDefault();
     if (
       event.type === "keydown" &&
       (event.key === "Tab" || event.key === "Shift")
@@ -189,6 +191,8 @@ const Navbar = () => {
   const drawer = (
     <>
       <Button
+        aria-label="Open navigation"
+        aria-expanded={isOpen}
         onClick={toggleDrawer(true)}
         sx={{
           animation: !hasAnimated ? "fadeIn" : "",
@@ -206,7 +210,7 @@ const Navbar = () => {
         open={isOpen}
         onClose={toggleDrawer(false)}
       >
-        <Button onClick={toggleDrawer(false)}>
+        <Button aria-label="Close navigation" onClick={toggleDrawer(false)}>
           <StyledDrawerCloseIcon />
         </Button>
         <Box
@@ -220,10 +224,7 @@ const Navbar = () => {
         >
           <StyledDrawerList>
             <StyledResumeLink
-              href={
-                process.env.PUBLIC_URL +
-                "/Ekansh_resume.pdf"
-              }
+              href={process.env.PUBLIC_URL + "/resume_quant.pdf"}
               target="_blank"
             >
               <Typography
@@ -244,9 +245,7 @@ const Navbar = () => {
             <StyledDrawerList key={data.id}>
               <StyledAppBarDrawerLink
                 onClick={toggleDrawer(false)}
-                to={data.name}
-                smooth={true}
-                duration={1000}
+                href={`/#${data.name}`}
               >
                 <Typography>{data.name}</Typography>
               </StyledAppBarDrawerLink>
@@ -254,6 +253,7 @@ const Navbar = () => {
           ))}
           <List>
             <Button
+              aria-label="Change theme"
               sx={{
                 color: MuiTheme.palette.textMain.main,
                 animation: "fadeIn",
@@ -288,12 +288,7 @@ const Navbar = () => {
             !hasAnimated ? "animate__animated animate__fadeInDown" : ""
           }
         >
-          <StyledAppBarLink
-            href={`#${data.name}`}
-            to={data.name}
-            smooth={true}
-            duration={1000}
-          >
+          <StyledAppBarLink href={`/#${data.name}`}>
             <Typography>{data.name}</Typography>
           </StyledAppBarLink>
         </div>
@@ -303,9 +298,7 @@ const Navbar = () => {
         className={!hasAnimated ? "animate__animated animate__fadeInDown" : ""}
       >
         <StyledResumeLink
-          href={
-            process.env.PUBLIC_URL + "/Ekansh_resume.pdf"
-          }
+          href={process.env.PUBLIC_URL + "/resume_quant.pdf"}
           target="_blank"
         >
           <Typography>Resume</Typography>
@@ -325,18 +318,18 @@ const Navbar = () => {
                 flexGrow: 1,
               }}
             >
-              <svg 
+              <svg
                 viewBox="0 0 59 58"
                 style={{
                   transform: "rotate(-90deg)",
                   width: "44px",
-                  
+
                   animation: !hasAnimated
                     ? collapse
                       ? "fadeIn"
                       : "fadeInDown"
                     : "",
-                    
+
                   animationDuration: collapse ? "2s" : "1s",
                 }}
               >

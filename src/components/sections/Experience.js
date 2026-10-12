@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import { React } from "react";
 import { Container, styled, useTheme } from "@mui/material";
 import {
   StyledDivider,
@@ -98,7 +98,7 @@ const Experience = () => {
   };
 
   return (
-    <Scroll.Element name="Experience">
+    <Scroll.Element name="Experience" id="Experience">
       <StyledGenericRoot ref={experienceContainer}>
         <StyledGenericContainer
           sx={
@@ -111,12 +111,13 @@ const Experience = () => {
               : { visibility: "hidden" }
           }
         >
-          <StyledGenericTitle component="h1">
+          <StyledGenericTitle component="h2">
             Experience
             <StyledDivider />
           </StyledGenericTitle>
-          <StyledGenericSubText component="h1">
-            I am currently a 4th year Computer Science student at Simon Fraser University but I have also had the opportunity to work at a few companies in the past. Here are a few of the places I have worked at!
+          <StyledGenericSubText component="p">
+            Production engineering experience across cloud infrastructure,
+            concurrent analytics, and payment systems.
           </StyledGenericSubText>
         </StyledGenericContainer>
 

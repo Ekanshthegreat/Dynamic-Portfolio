@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Container, Grid, Typography, styled } from "@mui/material";
+import { Container, Grid, Typography, styled, useTheme } from "@mui/material";
 import "animate.css";
 
 //Component styles//
@@ -14,14 +14,16 @@ const StyledHeroRoot = styled("section")(({ theme }) => ({
   minHeight: "100vh",
 }));
 
-const StyledHeroContainer = styled(Container)(({ theme, ismobile }) => ({
+const StyledHeroContainer = styled(Container, {
+  shouldForwardProp: (prop) => prop !== "ismobile",
+})(({ theme, ismobile }) => ({
   display: "flex !important",
   flex: "1",
   alignItems: "center",
   alignSelf: "center",
   boxSizing: "unset !important",
   width: "unset",
-  ["@media (max-height: 804px)"]: {
+  "@media (max-height: 804px)": {
     paddingTop: ismobile ? "0px" : "102px",
   },
   [theme.breakpoints.up("sm")]: {
@@ -29,7 +31,9 @@ const StyledHeroContainer = styled(Container)(({ theme, ismobile }) => ({
   },
 }));
 
-const StyledHeroGrid = styled(Grid)(({ ismobile }) => ({
+const StyledHeroGrid = styled(Grid, {
+  shouldForwardProp: (prop) => prop !== "ismobile",
+})(({ ismobile }) => ({
   alignItems: "center",
   justifyContent: "space-around",
   width: "auto",
@@ -114,6 +118,7 @@ const ScrollerIcon = styled("div")(({ theme }) => ({
 //End component style//
 
 const Hero = ({ img }) => {
+  const theme = useTheme();
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -134,10 +139,26 @@ const Hero = ({ img }) => {
             <StyledHeroTitle component="h1" variant="h2">
               Ekansh Chawla
             </StyledHeroTitle>
-            <StyledHeroSubText component="h1" variant="h5">
-              Full stack Software Developer who enjoys solving real-world problems with tech, and making games. 
-      
+            <StyledHeroSubText component="p" variant="h5">
+              Software Engineer · Systems & Quantitative Computing
             </StyledHeroSubText>
+            <Typography
+              component="p"
+              sx={{
+                color: theme.palette.textMain.main,
+                mt: 2,
+                fontSize: "1.05rem",
+              }}
+            >
+              Previously at AWS, Visier, and Amazon. I build reliable software
+              and explore distributed systems, quantitative finance, and market
+              microstructure.
+            </Typography>
+            <div className="hero-links">
+              <a href="/#Projects">Selected work</a>
+              <a href="/research">Research paper</a>
+              <a href="/resume_quant.pdf">Resume</a>
+            </div>
           </StyledHeroText>
         </StyledHeroGrid>
       </StyledHeroContainer>

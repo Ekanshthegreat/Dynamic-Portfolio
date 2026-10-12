@@ -1,0 +1,18 @@
+{
+  "/": {
+    "title": "Systems & Quantitative Computing",
+    "description": "Ekansh Chawla \u2014 software engineering, distributed systems, and quantitative computing. Experience at AWS, Visier, and Amazon."
+  },
+  "/research": {
+    "title": "Portfolio Rebalancing Research",
+    "description": "Fewer Rebalances, Lower Costs? An independent working paper on target dynamics, transaction costs, and portfolio implementation."
+  },
+  "/projects/mercury": {
+    "title": "Mercury \u2014 Market Microstructure Engine",
+    "description": "A C++20 price-time-priority order book and state-dependent stochastic simulator, with invariant tests and a latency benchmark."
+  },
+  "/projects/nodeai": {
+    "title": "NodeAI \u2014 Robot Fleet Orchestration",
+    "description": "A TypeScript fleet-orchestration prototype combining typed mission plans, grid routing, telemetry adapters, and fault-triggered reassignment."
+  }
+}

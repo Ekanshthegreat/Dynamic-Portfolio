@@ -8,6 +8,10 @@
     "name": "Experience"
   },
   {
+    "id": "research",
+    "name": "Research"
+  },
+  {
     "id": "2",
     "name": "Projects"
   },

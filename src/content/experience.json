@@ -1,10 +1,24 @@
 [
   {
+    "id": "aws-2026",
+    "company": "Amazon Web Services",
+    "jobTitle": "Software Development Engineer Intern",
+    "years": "May \u2013 September 2026",
+    "description": "Built CloudFormation dependency resolution with graph traversal and intrinsic-function handling. Engineered atomic resource transfers with DynamoDB transactions, SWF orchestration, and idempotent retries."
+  },
+  {
+    "id": "visier-2026",
+    "company": "Visier",
+    "jobTitle": "Full-Stack Developer Intern",
+    "years": "January \u2013 April 2026",
+    "description": "Optimized concurrent analytics pipelines with Scala, Akka Streams, and Futures. Batching and caching reduced API latency by more than 30%."
+  },
+  {
     "id": "0",
     "company": "Amazon",
-    "jobTitle": "Software Developer",
+    "jobTitle": "Software Development Engineer Intern",
     "years": "2025 May - 2025 Sep",
-    "description": "Worked under the payments and preferences team to support features for Prime Video"
+    "description": "Built an SPI-based payment-preference plugin architecture, reducing database calls by 15%. Improved concurrent state management with a 35% contention reduction in 500-thread JMH benchmarks."
   },
   {
     "id": "1",
@@ -18,14 +32,14 @@
     "company": "Multi-Agent Robot Systems Lab",
     "jobTitle": "Robotics Software Developer",
     "years": "2024 January - 2024 May",
-    "description": "Developed pathfinding algorithims in ROS. (SLAM - Simultaneous Localization and Mapping)"
+    "description": "Developed pathfinding algorithms in ROS. (SLAM - Simultaneous Localization and Mapping)"
   },
   {
     "id": "3",
     "company": "CJSF Radio Systems",
     "jobTitle": "Front End Developer",
     "years": "2024 May - 2024 August",
-    "description": "Develoed responsive user interface leveraging Drupal's theming layer and PHP to create dynamic content."
+    "description": "Developed responsive user interface leveraging Drupal's theming layer and PHP to create dynamic content."
   },
   {
     "id": "4",
