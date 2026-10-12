@@ -14,5 +14,9 @@
   "/projects/nodeai": {
     "title": "NodeAI \u2014 Robot Fleet Orchestration",
     "description": "A TypeScript fleet-orchestration prototype combining typed mission plans, grid routing, telemetry adapters, and fault-triggered reassignment."
+  },
+  "/research/state-validity": {
+    "title": "State-Validity-Aware Inference Scheduling",
+    "description": "When Timely Answers Become Obsolete: a reproducible technical report with simulation and Apple GPU inference experiments, conditional gains and group service trade-offs."
   }
 }

@@ -6,6 +6,7 @@ import Main from "./components/Main";
 import NotFound404 from "./components/NotFound404";
 import DetailLayout from "./components/DetailLayout";
 import Research from "./pages/Research";
+import StateValidity from "./pages/StateValidity";
 import Mercury from "./pages/Mercury";
 import NodeAI from "./pages/NodeAI";
 import { lightTheme, darkTheme } from "./Theme";
@@ -58,6 +59,7 @@ export default function App() {
           </a>
           <Routes>
             <Route path="/" element={<Main />} />
+            <Route path="/research/state-validity" element={<DetailLayout><StateValidity /></DetailLayout>} />
             <Route
               path="/research"
               element={

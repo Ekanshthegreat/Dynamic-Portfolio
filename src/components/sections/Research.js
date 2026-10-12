@@ -7,7 +7,7 @@ import {
   StyledGenericTitle,
   StyledGenericSubText,
 } from "./Styles";
-import { paper, code } from "../../content/links";
+import { paper, code, stateValidityPaper, stateValidityCode } from "../../content/links";
 export default function ResearchSection() {
   const theme = useTheme();
   return (
@@ -90,6 +90,28 @@ export default function ResearchSection() {
               >
                 Code &amp; results ↗
               </Button>
+            </Box>
+          </Box>
+          <Box sx={{ mt: 5, p: { xs: 2, sm: 4 }, border: "0.25rem solid " + theme.palette.backgroundSecondary.main + "70", borderRadius: "2rem", backgroundColor: theme.palette.backgroundSecondary.main + "10", maxWidth: 850 }}>
+            <Typography component="h3" sx={{ color: theme.palette.textMain.main, fontSize: "1.6rem", fontWeight: 600 }}>
+              When Timely Answers Become Obsolete
+            </Typography>
+            <Typography sx={{ color: theme.palette.textSecondary.main, mt: 1, mb: 2 }}>
+              ML systems · Independent technical report · October 2026
+            </Typography>
+            <Typography sx={{ color: theme.palette.textMain.main, fontSize: "1.15rem", mb: 2 }}>
+              Can an inference scheduler choose answers that stay useful as state changes? A simulation study and separate Apple GPU experiments examine the trade-off between more useful decisions overall and worse service for frequently changing agents.
+            </Typography>
+            <a href="/research/state-validity">
+              <img className="research-section-figure" src="/research/state-validity/group-results.svg" alt="Measured Apple GPU results: aggregate success improves, but higher-change agents receive fewer useful decisions." />
+            </a>
+            <Typography sx={{ color: theme.palette.textMain.main, mt: 2 }}>
+              6,545 simulations and 480 real-model replays. Benefits are conditional; asynchronous controls do not retain the matched-policy gain. Unreviewed technical report.
+            </Typography>
+            <Box sx={{ display: "flex", gap: 2, flexWrap: "wrap", mt: 3 }}>
+              <Button component="a" href="/research/state-validity" variant="contained" sx={{ backgroundColor: theme.palette.buttonHover.main }}>Read the inference study</Button>
+              <Button component="a" href={stateValidityPaper} sx={{ color: theme.palette.textMain.main }}>Read inference paper ↗</Button>
+              <Button component="a" href={stateValidityCode} sx={{ color: theme.palette.textMain.main }}>Inference code &amp; results ↓</Button>
             </Box>
           </Box>
         </StyledGenericContainer>

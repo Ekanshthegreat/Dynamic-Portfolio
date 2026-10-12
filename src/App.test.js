@@ -79,3 +79,13 @@ test("NodeAI scope and source are accurately represented", () => {
     screen.getByText(/Mission replay is still a UI scaffold/),
   ).toBeInTheDocument();
 });
+
+test("inference research deep link includes the report, artifact and limits", () => {
+  window.history.replaceState({}, "", "/research/state-validity");
+  render(<App />);
+  expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent("When Timely Answers");
+  expect(screen.getByRole("link", { name: /Read paper/ })).toHaveAttribute("href", "/research/state-validity/state-validity-report-v1.0.1.pdf");
+  expect(screen.getByRole("link", { name: /Code & results/ })).toHaveAttribute("href", "/research/state-validity/state-validity-research-v1.0.1.zip");
+  expect(screen.getByText(/This is an unreviewed technical report/)).toBeInTheDocument();
+  expect(screen.getByText(/The native asynchronous controls/)).toBeInTheDocument();
+});

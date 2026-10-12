@@ -156,7 +156,7 @@ const Hero = ({ img }) => {
             </Typography>
             <div className="hero-links">
               <a href="/#Projects">Selected work</a>
-              <a href="/research">Research paper</a>
+              <a href="/#Research">Research studies</a>
             </div>
           </StyledHeroText>
         </StyledHeroGrid>

@@ -23,6 +23,7 @@ require.extensions[".js"] = (module, filename) => {
   module._compile(result.code, filename);
 };
 const articlePages = {
+  "/research/state-validity": require("../src/pages/StateValidity").default,
   "/research": require("../src/pages/Research").default,
   "/projects/mercury": require("../src/pages/Mercury").default,
   "/projects/nodeai": require("../src/pages/NodeAI").default,

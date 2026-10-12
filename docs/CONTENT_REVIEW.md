@@ -14,3 +14,11 @@
 - External network services can block automated requests. Zenodo URLs use the record and filenames supplied in the published record; public NodeAI source was successfully cloned for inspection.
 - Contact email and public profile links are carried forward from the existing resume/site.
 - The owner subsequently requested integration within the original visual design and authorized committing/pushing the website to Dynamic-Portfolio. Neither Mercury nor NodeAI source was modified.
+
+## Inference scheduling report - 12 October 2026
+
+- Version 1.0.1 of the local state-validity report and its audited original outputs.
+- 6,545 CPU policy runs; 480 native Apple GPU replays; 84 measured profile repetitions; 17 correctness tests.
+- The website figure uses native confirmation means: aggregate 5.78% to 7.66%, lower-change 10.00% to 15.10%, higher-change 1.56% to 0.21%, at 16 agents/base 4 changes per second. Its bars do not imply confidence intervals.
+- Unreviewed technical-report status, synthetic workload, asynchronous negative controls, service trade-off and uncalibrated CPU timing are explicit. No novelty, production, CUDA, peer-review, DOI or public GitHub research-repository claim added.
+- The PDF and both release packages are hosted as portfolio assets. The previous finance-paper DOI is used only for that paper.

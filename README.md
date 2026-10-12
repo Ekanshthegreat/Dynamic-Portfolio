@@ -12,13 +12,15 @@ npm run build
 npm run preview
 ```
 
-The production preview runs at http://127.0.0.1:4173. Python 3 is required only for this optional preview helper. The production build emits route-specific HTML files and search/sharing metadata. The three article pages also include their text in the initial HTML. The original browser-rendered homepage is retained; React renders the interactive site on load.
+The production preview runs at http://127.0.0.1:4173. Python 3 is required only for this optional preview helper. The production build emits route-specific HTML files and search/sharing metadata. The four article pages also include their text in the initial HTML. The original browser-rendered homepage is retained; React renders the interactive site on load.
 
 ## Content maintenance
 
 - `src/components/Main.js` and `src/components/sections/`: existing homepage structure, portrait, About, experience carousel, Research, project cards, and Hobbies.
 - `src/content/{experience,projects,navbar}.json`: homepage content and navigation.
-- `src/pages/Research.js`: paper summary, methodology, limitations, downloads.
+- `src/pages/Research.js`: rebalancing paper summary, methodology, limitations, downloads.
+- `src/pages/StateValidity.js`: inference-scheduling report, evaluation, service trade-offs and downloads.
+- `public/research/state-validity/`: version 1.0.1 PDF, source/results packages and the grayscale result figure.
 - `src/pages/Mercury.js`: current implementation and roadmap; replace the explicit “GitHub source — coming soon” text when a public repository exists.
 - `src/pages/NodeAI.js`: prototype architecture and source link.
 - `src/content/links.js`: shared contact and paper links.
