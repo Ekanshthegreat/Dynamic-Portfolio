@@ -44,3 +44,7 @@ Use the existing Dynamic-Portfolio repository and Vercel project. The owner auth
 5. If the domain changes, update `public/index.html`, `public/robots.txt`, `public/sitemap.xml`, `scripts/prerender.cjs`, `src/App.js`, and the resume portfolio link.
 
 Existing homepage components and assets remain in use. No dependency versions were upgraded. The previous editorial redesign was backed up outside this repository before the integration was corrected.
+
+The inference study is archived at https://zenodo.org/records/23328001
+(DOI 10.5281/zenodo.23328001). Paper and code buttons use verified Zenodo
+filenames; the standalone Overleaf package remains a local download.

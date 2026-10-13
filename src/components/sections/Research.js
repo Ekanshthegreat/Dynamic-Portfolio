@@ -7,7 +7,7 @@ import {
   StyledGenericTitle,
   StyledGenericSubText,
 } from "./Styles";
-import { paper, code, stateValidityPaper, stateValidityCode } from "../../content/links";
+import { paper, code, stateValidityPaper, stateValidityCode, stateValidityZenodo } from "../../content/links";
 export default function ResearchSection() {
   const theme = useTheme();
   return (
@@ -110,7 +110,8 @@ export default function ResearchSection() {
             </Typography>
             <Box sx={{ display: "flex", gap: 2, flexWrap: "wrap", mt: 3 }}>
               <Button component="a" href="/research/state-validity" variant="contained" sx={{ backgroundColor: theme.palette.buttonHover.main }}>Read the inference study</Button>
-              <Button component="a" href={stateValidityPaper} sx={{ color: theme.palette.textMain.main }}>Read inference paper ↗</Button>
+              <Button component="a" href={stateValidityPaper} sx={{ color: theme.palette.textMain.main }}>Download inference paper ↓</Button>
+              <Button component="a" href={stateValidityZenodo} sx={{ color: theme.palette.textMain.main }}>Zenodo record ↗</Button>
               <Button component="a" href={stateValidityCode} sx={{ color: theme.palette.textMain.main }}>Inference code &amp; results ↓</Button>
             </Box>
           </Box>

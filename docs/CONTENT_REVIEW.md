@@ -22,3 +22,13 @@
 - The website figure uses native confirmation means: aggregate 5.78% to 7.66%, lower-change 10.00% to 15.10%, higher-change 1.56% to 0.21%, at 16 agents/base 4 changes per second. Its bars do not imply confidence intervals.
 - Unreviewed technical-report status, synthetic workload, asynchronous negative controls, service trade-off and uncalibrated CPU timing are explicit. No novelty, production, CUDA, peer-review, DOI or public GitHub research-repository claim added.
 - The PDF and both release packages are hosted as portfolio assets. The previous finance-paper DOI is used only for that paper.
+
+## Published inference record
+
+Zenodo record 23328001 was inspected directly. Its canonical PDF and hyphenated
+code archive match the final local release MD5 hashes. DOI 10.5281/zenodo.23328001
+is now linked on the detail page, with a record link on both the homepage and
+detail page. Native report date remains 12 October 2026. Zenodo metadata currently
+shows 5 August 2026 and a truncated title; neither is propagated as the manuscript
+date/title. No separate Overleaf ZIP is listed on the record, so that download
+continues to use the updated local asset. All local copies include the DOI.

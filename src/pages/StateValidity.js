@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { stateValidityPaper, stateValidityCode, stateValidityLatex } from "../content/links";
+import External from "../components/External";
+import { stateValidityPaper, stateValidityCode, stateValidityLatex, stateValidityZenodo, stateValidityDoi } from "../content/links";
 
 export default function StateValidity() {
   return (
@@ -11,10 +12,12 @@ export default function StateValidity() {
       <p className="subtitle">A Model-Based Study of State-Validity-Aware Inference Scheduling</p>
       <div className="paper-meta">
         <span>Ekansh Chawla</span><span>12 October 2026</span><span>Version 1.0.1 · Unreviewed</span>
+        <External href={stateValidityDoi}>DOI: 10.5281/zenodo.23328001</External>
       </div>
       <div className="actions">
-        <a className="button" href={stateValidityPaper}>Read paper <span>↗</span></a>
-        <a className="text-link" href={stateValidityCode} download>Code &amp; results ↓</a>
+        <a className="button" href={stateValidityPaper}>Download paper <span>↓</span></a>
+        <External className="text-link" href={stateValidityZenodo}>Zenodo record ↗</External>
+        <External className="text-link" href={stateValidityCode}>Code &amp; results ↓</External>
         <a className="text-link" href={stateValidityLatex} download>LaTeX source ↓</a>
       </div>
       <div className="abstract">
@@ -64,9 +67,9 @@ export default function StateValidity() {
           </section>
           <section id="reproduce">
             <h2>Inspect the full artifact.</h2>
-            <p>The release contains the 14-page report, nine figures, editable LaTeX, original code, raw observations, archived experiment sources, protocols and checksums. Model weights are downloaded separately. The report and figures use CC BY 4.0; original code uses MIT.</p>
+            <p>The Zenodo record archives the 14-page report, nine figures, editable LaTeX, original code, raw observations, archived experiment sources, protocols and checksums. A separate Overleaf-ready source package is also available below. Model weights are downloaded separately. The report and figures use CC BY 4.0; original code uses MIT.</p>
             <div className="actions">
-              <a className="text-link" href={stateValidityCode} download>Download code &amp; results</a>
+              <External className="text-link" href={stateValidityCode}>Download code &amp; results</External>
               <a className="text-link" href={stateValidityLatex} download>Download Overleaf source</a>
             </div>
           </section>
