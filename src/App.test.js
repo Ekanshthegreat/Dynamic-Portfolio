@@ -10,18 +10,16 @@ beforeEach(() => {
   Element.prototype.scrollIntoView = jest.fn();
   localStorage.clear();
   window.history.replaceState({}, "", "/");
-  window.matchMedia = jest
-    .fn()
-    .mockImplementation((query) => ({
-      matches: false,
-      media: query,
-      onchange: null,
-      addListener: jest.fn(),
-      removeListener: jest.fn(),
-      addEventListener: jest.fn(),
-      removeEventListener: jest.fn(),
-      dispatchEvent: jest.fn(),
-    }));
+  window.matchMedia = jest.fn().mockImplementation((query) => ({
+    matches: false,
+    media: query,
+    onchange: null,
+    addListener: jest.fn(),
+    removeListener: jest.fn(),
+    addEventListener: jest.fn(),
+    removeEventListener: jest.fn(),
+    dispatchEvent: jest.fn(),
+  }));
   setupIntersectionMocking(jest.fn);
 });
 afterEach(() => resetIntersectionMocking());
@@ -75,17 +73,36 @@ test("NodeAI scope and source are accurately represented", () => {
   expect(
     screen.getByRole("link", { name: /View source on GitHub/ }),
   ).toHaveAttribute("href", "https://github.com/Ekanshthegreat/NodeAI-rework");
-  expect(screen.getByRole("link", { name: "Open the simulator" })).toHaveAttribute("href", "https://ekanshthegreat.github.io/NodeAI-rework/");
+  expect(
+    screen.getByRole("link", { name: "Open the simulator" }),
+  ).toHaveAttribute("href", "https://ekanshthegreat.github.io/NodeAI-rework/");
 });
 
 test("inference research deep link includes the report, artifact and limits", () => {
   window.history.replaceState({}, "", "/research/state-validity");
   render(<App />);
-  expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent("When Timely Answers");
-  expect(screen.getByRole("link", { name: /Download paper/ })).toHaveAttribute("href", "https://zenodo.org/records/23328001/files/state_validity_report.pdf?download=1");
-  expect(screen.getByRole("link", { name: /Code & results/ })).toHaveAttribute("href", "https://zenodo.org/records/23328001/files/state-validity-research-v1.0.1.zip?download=1");
-  expect(screen.getByRole("link", { name: /DOI: 10.5281\/zenodo.23328001/ })).toHaveAttribute("href", "https://doi.org/10.5281/zenodo.23328001");
-  expect(screen.getByRole("link", { name: /Zenodo record/ })).toHaveAttribute("href", "https://zenodo.org/records/23328001");
-  expect(screen.getByText(/This is an unreviewed technical report/)).toBeInTheDocument();
-  expect(screen.getByText(/The native asynchronous controls/)).toBeInTheDocument();
+  expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent(
+    "When Timely Answers",
+  );
+  expect(screen.getByRole("link", { name: /Download paper/ })).toHaveAttribute(
+    "href",
+    "https://zenodo.org/records/23328001/files/state_validity_report.pdf?download=1",
+  );
+  expect(screen.getByRole("link", { name: /Code & results/ })).toHaveAttribute(
+    "href",
+    "https://zenodo.org/records/23328001/files/state-validity-research-v1.0.1.zip?download=1",
+  );
+  expect(
+    screen.getByRole("link", { name: /DOI: 10.5281\/zenodo.23328001/ }),
+  ).toHaveAttribute("href", "https://doi.org/10.5281/zenodo.23328001");
+  expect(screen.getByRole("link", { name: /Zenodo record/ })).toHaveAttribute(
+    "href",
+    "https://zenodo.org/records/23328001",
+  );
+  expect(
+    screen.getByText(/This is an unreviewed technical report/),
+  ).toBeInTheDocument();
+  expect(
+    screen.getByText(/The native asynchronous controls/),
+  ).toBeInTheDocument();
 });

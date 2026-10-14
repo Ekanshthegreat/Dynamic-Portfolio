@@ -60,7 +60,14 @@ export default function App() {
           </a>
           <Routes>
             <Route path="/" element={<Main />} />
-            <Route path="/research/state-validity" element={<DetailLayout><StateValidity /></DetailLayout>} />
+            <Route
+              path="/research/state-validity"
+              element={
+                <DetailLayout>
+                  <StateValidity />
+                </DetailLayout>
+              }
+            />
             <Route
               path="/research"
               element={
@@ -85,7 +92,14 @@ export default function App() {
                 </DetailLayout>
               }
             />
-            <Route path="/projects/mentral" element={<DetailLayout><Mentral /></DetailLayout>} />
+            <Route
+              path="/projects/mentral"
+              element={
+                <DetailLayout>
+                  <Mentral />
+                </DetailLayout>
+              }
+            />
             <Route path="*" element={<NotFound404 />} />
           </Routes>
         </BrowserRouter>
