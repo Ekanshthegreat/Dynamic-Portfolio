@@ -27,7 +27,7 @@ export default function Mentral() {
           className="text-link"
           href="https://github.com/Ekanshthegreat/Mentral.AI-hackTheNorth2025/blob/main/docs/DEMO.md"
         >
-          Development-host walkthrough ↗
+          Development-host walkthrough
         </External>
       </div>
       <div className="architecture" aria-label="Mentral explanation flow">

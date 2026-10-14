@@ -125,7 +125,7 @@ export default function Mercury() {
               className="text-link"
               href="https://github.com/Ekanshthegreat/Mercury/blob/main/docs/EXPERIMENTS.md"
             >
-              Experiment design and accounting ↗
+              Experiment design and accounting
             </External>
           </section>
         </div>

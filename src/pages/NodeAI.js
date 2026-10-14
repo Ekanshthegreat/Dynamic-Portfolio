@@ -122,7 +122,7 @@ export default function NodeAI() {
               className="text-link"
               href="https://github.com/Ekanshthegreat/NodeAI-rework/blob/main/docs/ROS2.md"
             >
-              ROS deployment guide ↗
+              ROS deployment guide
             </External>
           </section>
         </div>
