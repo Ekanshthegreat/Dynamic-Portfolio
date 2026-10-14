@@ -23,6 +23,7 @@ require.extensions[".js"] = (module, filename) => {
   module._compile(result.code, filename);
 };
 const articlePages = {
+  "/projects/mentral": require("../src/pages/Mentral").default,
   "/research/state-validity": require("../src/pages/StateValidity").default,
   "/research": require("../src/pages/Research").default,
   "/projects/mercury": require("../src/pages/Mercury").default,

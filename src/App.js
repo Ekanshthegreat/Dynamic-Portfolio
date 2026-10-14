@@ -9,6 +9,7 @@ import Research from "./pages/Research";
 import StateValidity from "./pages/StateValidity";
 import Mercury from "./pages/Mercury";
 import NodeAI from "./pages/NodeAI";
+import Mentral from "./pages/Mentral";
 import { lightTheme, darkTheme } from "./Theme";
 import pages from "./content/pages.json";
 function PageMetadata() {
@@ -84,6 +85,7 @@ export default function App() {
                 </DetailLayout>
               }
             />
+            <Route path="/projects/mentral" element={<DetailLayout><Mentral /></DetailLayout>} />
             <Route path="*" element={<NotFound404 />} />
           </Routes>
         </BrowserRouter>

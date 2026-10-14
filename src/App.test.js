@@ -75,9 +75,7 @@ test("NodeAI scope and source are accurately represented", () => {
   expect(
     screen.getByRole("link", { name: /View source on GitHub/ }),
   ).toHaveAttribute("href", "https://github.com/Ekanshthegreat/NodeAI-rework");
-  expect(
-    screen.getByText(/Mission replay is still a UI scaffold/),
-  ).toBeInTheDocument();
+  expect(screen.getByRole("link", { name: "Open the simulator" })).toHaveAttribute("href", "https://ekanshthegreat.github.io/NodeAI-rework/");
 });
 
 test("inference research deep link includes the report, artifact and limits", () => {

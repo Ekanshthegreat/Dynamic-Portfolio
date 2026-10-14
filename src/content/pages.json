@@ -9,14 +9,18 @@
   },
   "/projects/mercury": {
     "title": "Mercury \u2014 Market Microstructure Engine",
-    "description": "A C++20 price-time-priority order book and state-dependent stochastic simulator, with invariant tests and a latency benchmark."
+    "description": "A C++20 execution laboratory with a price-time order book, five policies, shared-tape replay and synthetic stress experiments."
   },
   "/projects/nodeai": {
     "title": "NodeAI \u2014 Robot Fleet Orchestration",
-    "description": "A TypeScript fleet-orchestration prototype combining typed mission plans, grid routing, telemetry adapters, and fault-triggered reassignment."
+    "description": "Robot mission simulation and ROS 2 Jazzy/Nav2 navigation, with waypoint missions, fault recovery and recorded replay."
   },
   "/research/state-validity": {
     "title": "State-Validity-Aware Inference Scheduling",
     "description": "When Timely Answers Become Obsolete: a reproducible technical report with simulation and Apple GPU inference experiments, conditional gains and group service trade-offs."
+  },
+  "/projects/mentral": {
+    "title": "Mentral \u2014 Hack the North 2025",
+    "description": "A VS Code programming mentor with editor context, local diagnostics, provider-backed explanations and configurable mentor profiles."
   }
 }

@@ -15,6 +15,10 @@
     {
       "source": "/projects/nodeai",
       "destination": "/projects/nodeai.html"
+    },
+    {
+      "source": "/projects/mentral",
+      "destination": "/projects/mentral.html"
     }
   ]
 }
